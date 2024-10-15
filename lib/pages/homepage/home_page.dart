@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 
 import 'package:food_delivery_ui/pages/home/home.dart';
-import 'package:food_delivery_ui/pages/page2/page2.dart';
-import 'package:food_delivery_ui/pages/page3/page3.dart';
-import 'package:food_delivery_ui/pages/page4/page4.dart';
-import 'package:food_delivery_ui/pages/page5/page5.dart';
+import 'package:food_delivery_ui/pages/shops/shops.dart';
+import 'package:food_delivery_ui/pages/search/search.dart';
+import 'package:food_delivery_ui/pages/order/order.dart';
+import 'package:food_delivery_ui/pages/account/account.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
