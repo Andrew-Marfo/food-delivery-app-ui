@@ -43,12 +43,38 @@ class CustomAppbar extends StatelessWidget {
               color: const Color(0xFFFCFBFA),
               shape: BoxShape.circle,
               border: Border.all(width: 2, color: const Color(0xFFF7F8F9))),
-          child: IconButton(
-            icon: const Icon(Icons.shopping_cart),
-            tooltip: 'Open shopping cart',
-            onPressed: () {
-              // handle the press
-            },
+          child: Stack(
+            children: [
+              IconButton(
+                icon: const Icon(Icons.shopping_cart),
+                tooltip: 'Open shopping cart',
+                onPressed: () {
+                  // handle the press
+                },
+              ),
+              Positioned(
+                top: 7,
+                right: 10,
+                child: Container(
+                  width: 15,
+                  height: 15,
+                  decoration: const BoxDecoration(
+                    color: Color(0xFFFF5247),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Center(
+                    child: Text(
+                      '2',
+                      style: TextStyle(
+                        fontSize: 10,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              )
+            ],
           ),
         ),
       ],
