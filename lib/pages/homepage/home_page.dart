@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:iconly/iconly.dart';
+
 import 'package:food_delivery_ui/pages/home/home.dart';
 import 'package:food_delivery_ui/pages/page2/page2.dart';
 import 'package:food_delivery_ui/pages/page3/page3.dart';
@@ -38,12 +40,14 @@ class _HomePageState extends State<HomePage> {
         selectedItemColor: const Color(0xFFF27D44),
         unselectedItemColor: Colors.grey,
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "home"),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: "search"),
+          BottomNavigationBarItem(icon: Icon(IconlyLight.home), label: "home"),
+          BottomNavigationBarItem(icon: Icon(IconlyLight.bag), label: "search"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.shopping_cart), label: "cart"),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: "person"),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: "person"),
+              icon: Icon(IconlyLight.search), label: "cart"),
+          BottomNavigationBarItem(
+              icon: Icon(IconlyLight.document), label: "person"),
+          BottomNavigationBarItem(
+              icon: Icon(IconlyLight.profile), label: "person"),
         ],
       ),
     );
