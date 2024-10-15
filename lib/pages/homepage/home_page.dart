@@ -45,19 +45,19 @@ class _HomePageState extends State<HomePage> {
               label: "home"),
           BottomNavigationBarItem(
               icon: Icon(pageIndex == 1 ? IconlyBold.bag : IconlyLight.bag),
-              label: "search"),
+              label: "shops"),
           BottomNavigationBarItem(
               icon:
                   Icon(pageIndex == 2 ? IconlyBold.search : IconlyLight.search),
-              label: "cart"),
+              label: "search"),
           BottomNavigationBarItem(
               icon: Icon(
                   pageIndex == 3 ? IconlyBold.document : IconlyLight.document),
-              label: "person"),
+              label: "order"),
           BottomNavigationBarItem(
               icon: Icon(
                   pageIndex == 4 ? IconlyBold.profile : IconlyLight.profile),
-              label: "person"),
+              label: "account"),
         ],
       ),
     );
