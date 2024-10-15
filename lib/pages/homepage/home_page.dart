@@ -39,15 +39,25 @@ class _HomePageState extends State<HomePage> {
         showUnselectedLabels: false,
         selectedItemColor: const Color(0xFFF27D44),
         unselectedItemColor: Colors.grey,
-        items: const [
-          BottomNavigationBarItem(icon: Icon(IconlyLight.home), label: "home"),
-          BottomNavigationBarItem(icon: Icon(IconlyLight.bag), label: "search"),
+        items: [
           BottomNavigationBarItem(
-              icon: Icon(IconlyLight.search), label: "cart"),
+              icon: Icon(pageIndex == 0 ? IconlyBold.home : IconlyLight.home),
+              label: "home"),
           BottomNavigationBarItem(
-              icon: Icon(IconlyLight.document), label: "person"),
+              icon: Icon(pageIndex == 1 ? IconlyBold.bag : IconlyLight.bag),
+              label: "search"),
           BottomNavigationBarItem(
-              icon: Icon(IconlyLight.profile), label: "person"),
+              icon:
+                  Icon(pageIndex == 2 ? IconlyBold.search : IconlyLight.search),
+              label: "cart"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                  pageIndex == 3 ? IconlyBold.document : IconlyLight.document),
+              label: "person"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                  pageIndex == 4 ? IconlyBold.profile : IconlyLight.profile),
+              label: "person"),
         ],
       ),
     );
