@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Page4 extends StatelessWidget {
-  const Page4({super.key});
+class Order extends StatelessWidget {
+  const Order({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text('This is page 4'),
+        child: Text('This is Order page'),
       ),
     );
   }

@@ -20,10 +20,10 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     final pages = [
       const Home(),
-      const Page2(),
-      const Page3(),
-      const Page4(),
-      const Page5(),
+      const Shops(),
+      const Search(),
+      const Order(),
+      const Account(),
     ];
     return Scaffold(
       body: pages[pageIndex],
