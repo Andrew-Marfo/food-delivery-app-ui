@@ -8,13 +8,12 @@ class PromotionCard extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
       padding: const EdgeInsets.only(left: 20),
+      clipBehavior: Clip.hardEdge,
       height: 180,
       width: double.infinity,
       decoration: BoxDecoration(
         color: const Color(0xFFF27D44),
-        borderRadius: BorderRadius.circular(
-          20,
-        ),
+        borderRadius: BorderRadius.circular(20),
       ),
       child: Stack(
         children: [
@@ -64,7 +63,10 @@ class PromotionCard extends StatelessWidget {
             right: -25,
             bottom: -25,
             height: 200,
-            child: Image.asset("assets/burger.png"),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(20),
+              child: Image.asset("assets/burger.png"),
+            ),
           ),
         ],
       ),

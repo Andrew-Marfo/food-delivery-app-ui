@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const CustomAppbar(),
       ),
-      body: Column(
+      body: const Column(
         children: [
           PromotionCard(),
         ],
