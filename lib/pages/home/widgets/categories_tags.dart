@@ -13,7 +13,6 @@ class CategoriesTags extends StatelessWidget {
     ];
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 20),
-      color: Colors.amber,
       height: 50,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
@@ -26,7 +25,7 @@ class CategoriesTags extends StatelessWidget {
                 Chip(
                   shape: const StadiumBorder(
                     side: BorderSide(
-                      width: 2,
+                      width: 1,
                       color: Color(0xFFF27D44),
                     ),
                   ),
