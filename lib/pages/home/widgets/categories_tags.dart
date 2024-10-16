@@ -12,6 +12,7 @@ class CategoriesTags extends StatelessWidget {
       {'name': 'Sushi', 'icon': 'IconlyLight.category'},
     ];
     return Container(
+      margin: const EdgeInsets.symmetric(horizontal: 20),
       color: Colors.amber,
       height: 50,
       child: ListView.builder(
